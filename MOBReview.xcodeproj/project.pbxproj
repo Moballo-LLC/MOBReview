@@ -24,19 +24,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		960C9BE21E03C65900DB9484 /* PBXContainerItemProxy */ = {
+		9644DDC01E8F1F6900D8C2E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 960C9BCF1E03C65800DB9484 /* Pods.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 157B208CB13B2315058F92E054A041D6;
-			remoteInfo = "Pods-MOBCore_iOS";
+			remoteGlobalIDString = C35D44FA490F19ED6593627714678AF7;
+			remoteInfo = "Pods-MOBReview_iOS";
 		};
-		96C285391E076B3B00481834 /* PBXContainerItemProxy */ = {
+		9644DDC21E8F1F6900D8C2E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 960C9BCF1E03C65800DB9484 /* Pods.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 501CD96DE23EFACC038CF45B299DD413;
-			remoteInfo = "Pods-MOBCore_WatchOS";
+			remoteGlobalIDString = DEFA9D63886C7456304A4DECC90307CC;
+			remoteInfo = "Pods-MOBReview_WatchOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -151,8 +151,8 @@
 		960C9BD01E03C65800DB9484 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				960C9BE31E03C65900DB9484 /* Pods_MOBCore_iOS.framework */,
-				96C2853A1E076B3B00481834 /* Pods_MOBCore_WatchOS.framework */,
+				9644DDC11E8F1F6900D8C2E4 /* Pods_MOBReview_iOS.framework */,
+				9644DDC31E8F1F6900D8C2E4 /* Pods_MOBReview_WatchOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -299,18 +299,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		960C9BE31E03C65900DB9484 /* Pods_MOBCore_iOS.framework */ = {
+		9644DDC11E8F1F6900D8C2E4 /* Pods_MOBReview_iOS.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = Pods_MOBCore_iOS.framework;
-			remoteRef = 960C9BE21E03C65900DB9484 /* PBXContainerItemProxy */;
+			path = Pods_MOBReview_iOS.framework;
+			remoteRef = 9644DDC01E8F1F6900D8C2E4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		96C2853A1E076B3B00481834 /* Pods_MOBCore_WatchOS.framework */ = {
+		9644DDC31E8F1F6900D8C2E4 /* Pods_MOBReview_WatchOS.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = Pods_MOBCore_WatchOS.framework;
-			remoteRef = 96C285391E076B3B00481834 /* PBXContainerItemProxy */;
+			path = Pods_MOBReview_WatchOS.framework;
+			remoteRef = 9644DDC21E8F1F6900D8C2E4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

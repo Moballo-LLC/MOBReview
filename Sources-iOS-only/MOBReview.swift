@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 #if os(iOS)
     open class MOBReview: NSObject {
@@ -39,12 +40,22 @@ import UIKit
             }
             return timesOpened
         }
-        open static func shouldAsk(cutoff: Int = 10) ->  Bool {
+        open static func shouldAsk(cutoff: Int = 20) ->  Bool {
             if (UserDefaults.standard.integer(forKey: counterKey) >= cutoff) && (UserDefaults.standard.bool(forKey: reviewedCurrentVersKey) != true) && (UserDefaults.standard.bool(forKey: neverReviewKey) != true)
             {
                 return true
             }
             return false
+        }
+        open static func promptReview(appID: String, appName: String, closure: (() -> Swift.Void)?) -> UIAlertController? {
+            if #available(iOS 10.3, *) {
+                SKStoreReviewController.requestReview()
+                return nil
+                
+            } else {
+                // Fallback on earlier versions
+                return reviewPopup(appID: appID, appName: appName, closure: closure)
+            }
         }
         open static func reviewPopup(appID: String, appName: String, closure: (() -> Swift.Void)?) -> UIAlertController {
             let alertController = UIAlertController(title: "Rate \(appName)", message:
