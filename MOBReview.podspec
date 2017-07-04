@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = 'MOBReview'
-  s.version          = '1.0.2'
+  s.version          = '1.1'
   s.summary          = 'A short description of MOBReview.'
-  s.homepage         = 'https://github.com/Moballo/MOBReview'
+  s.homepage         = 'https://github.com/Moballo-LLC/MOBReview'
   s.license          = 'MIT'
-  s.author           = { 'Jason Morcos' => 'jason.morcos@moballo.com' }
-  s.source           = { :git => 'https://github.com/Moballo/MOBReview.git', :tag => s.version.to_s }
+  s.author           = { 'Jason Morcos - Moballo, LLC' => 'jason.morcos@moballo.com' }
+  s.source           = { :git => 'https://github.com/Moballo-LLC/MOBReview.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
   s.watchos.deployment_target = '2.0'
