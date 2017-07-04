@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MOBReview'
-  s.version          = '1.1'
+  s.version          = '1.1.1'
   s.summary          = 'A system for managing review prompts utilizing both iOS 10.3 and pre-iOS 10.3 methods.'
   s.homepage         = 'https://github.com/Moballo-LLC/MOBReview'
   s.license          = 'MIT'
@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
 
   s.framework = 'UIKit'
   s.framework = 'StoreKit'
-  s.source_files  = ['Sources/**/*.swift']
+  # s.source_files  = ['Sources/**/*.swift']
   s.ios.source_files= 'Sources-iOS-only/**/*.swift'
 end
