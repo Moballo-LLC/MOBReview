@@ -11,12 +11,12 @@ import StoreKit
 
 #if os(iOS)
     open class MOBReview: NSObject {
-        internal static let counterKey = "com.moballo.MOBReview.counter"
-        internal static let buildVersKey = "com.moballo.MOBReview.lastVers"
-        internal static let reviewedCurrentVersKey = "com.moballo.MOBReview.reviewedThisVers"
-        internal static let neverReviewKey = "com.moballo.MOBReview.neverReview"
+        @objc internal static let counterKey = "com.moballo.MOBReview.counter"
+        @objc internal static let buildVersKey = "com.moballo.MOBReview.lastVers"
+        @objc internal static let reviewedCurrentVersKey = "com.moballo.MOBReview.reviewedThisVers"
+        @objc internal static let neverReviewKey = "com.moballo.MOBReview.neverReview"
         
-        @discardableResult
+        @objc @discardableResult
         public static func incrementOpen() -> Int {
             let countOpenTimes: Int = timesOpened() + 1
             let appBuild = Bundle.main.infoDictionary!["CFBundleVersion"] as! String
@@ -26,7 +26,7 @@ import StoreKit
             
             return countOpenTimes
         }
-        public static func timesOpened() -> Int {
+        @objc public static func timesOpened() -> Int {
             var timesOpened: Int = 0
             let appBuild = Bundle.main.infoDictionary!["CFBundleVersion"] as! String
             if let stored = UserDefaults.standard.integer(forKey: counterKey) as Int? {
@@ -40,14 +40,14 @@ import StoreKit
             }
             return timesOpened
         }
-        open static func shouldAsk(cutoff: Int = 20) ->  Bool {
+        @objc open static func shouldAsk(cutoff: Int = 20) ->  Bool {
             if (UserDefaults.standard.integer(forKey: counterKey) >= cutoff) && (UserDefaults.standard.bool(forKey: reviewedCurrentVersKey) != true) && (UserDefaults.standard.bool(forKey: neverReviewKey) != true)
             {
                 return true
             }
             return false
         }
-        open static func promptReview(appID: String, appName: String, closure: (() -> Swift.Void)?) -> UIAlertController? {
+        @objc open static func promptReview(appID: String, appName: String, closure: (() -> Swift.Void)?) -> UIAlertController? {
             if #available(iOS 10.3, *) {
                 SKStoreReviewController.requestReview()
                 return nil
@@ -57,7 +57,7 @@ import StoreKit
                 return reviewPopup(appID: appID, appName: appName, closure: closure)
             }
         }
-        open static func reviewPopup(appID: String, appName: String, closure: (() -> Swift.Void)?) -> UIAlertController {
+        @objc open static func reviewPopup(appID: String, appName: String, closure: (() -> Swift.Void)?) -> UIAlertController {
             let alertController = UIAlertController(title: "Rate \(appName)", message:
                 "If you like using \(appName), could you take a moment to rate it? Positive reviews help promote development. It only takes a minute!\nThanks for your support!", preferredStyle: UIAlertControllerStyle.alert)
             let okAction = UIAlertAction(title: "Yes", style: UIAlertActionStyle.default) {

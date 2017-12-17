@@ -11,8 +11,6 @@
 		4435D8B695F6944FFDCFD9ED /* Pods_MOBReview_WatchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E76D8F1CF05F71210DE2972 /* Pods_MOBReview_WatchOS.framework */; };
 		960C9BE51E03C67600DB9484 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960C9BE41E03C67600DB9484 /* UIKit.framework */; };
 		960C9BEB1E03C69900DB9484 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960C9BEA1E03C69900DB9484 /* UIKit.framework */; };
-		96C2855E1E076EFF00481834 /* Info-watch.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96C285521E076EFF00481834 /* Info-watch.plist */; };
-		96C285601E076EFF00481834 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96C285531E076EFF00481834 /* Info.plist */; };
 		96C285641E076EFF00481834 /* MOBCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C285551E076EFF00481834 /* MOBCore.h */; };
 		96C285651E076EFF00481834 /* MOBCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C285551E076EFF00481834 /* MOBCore.h */; };
 		96C285721E076EFF00481834 /* MOBReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2855D1E076EFF00481834 /* MOBReview.swift */; };
@@ -263,7 +261,7 @@
 					1EAFA0D71B6039D5001F3D84 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = NKQ4HJ66PX;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0920;
 					};
 					960C9BBB1E03BFAB00DB9484 = {
 						CreatedOnToolsVersion = 8.2;
@@ -319,8 +317,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96C285601E076EFF00481834 /* Info.plist in Resources */,
-				96C2855E1E076EFF00481834 /* Info-watch.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,7 +599,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -670,7 +666,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
