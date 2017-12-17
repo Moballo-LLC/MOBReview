@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '2.0'
 
   s.framework = 'UIKit'
-  s.framework = 'StoreKit'
   s.source_files  = ['Sources/**/*.swift']
   s.ios.source_files= 'Sources-iOS-only/**/*.swift'
 end
