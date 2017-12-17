@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MOBReview'
-  s.version          = '1.1.3'
+  s.version          = '1.1.4'
   s.summary          = 'A system for managing review prompts utilizing both iOS 10.3 and pre-iOS 10.3 methods.'
   s.homepage         = 'https://github.com/Moballo-LLC/MOBReview'
   s.license          = 'MIT'
