@@ -40,14 +40,14 @@ import StoreKit
             }
             return timesOpened
         }
-        @objc open static func shouldAsk(cutoff: Int = 20) ->  Bool {
+        @objc public static func shouldAsk(cutoff: Int = 20) ->  Bool {
             if (UserDefaults.standard.integer(forKey: counterKey) >= cutoff) && (UserDefaults.standard.bool(forKey: reviewedCurrentVersKey) != true) && (UserDefaults.standard.bool(forKey: neverReviewKey) != true)
             {
                 return true
             }
             return false
         }
-        @objc open static func promptReview(appID: String, appName: String, closure: (() -> Swift.Void)?) -> UIAlertController? {
+        @objc public static func promptReview(appID: String, appName: String, closure: (() -> Swift.Void)?) -> UIAlertController? {
             if #available(iOS 10.3, *) {
                 SKStoreReviewController.requestReview()
                 return nil
@@ -57,7 +57,7 @@ import StoreKit
                 return reviewPopup(appID: appID, appName: appName, closure: closure)
             }
         }
-        @objc open static func reviewPopup(appID: String, appName: String, closure: (() -> Swift.Void)?) -> UIAlertController {
+        @objc public static func reviewPopup(appID: String, appName: String, closure: (() -> Swift.Void)?) -> UIAlertController {
             let alertController = UIAlertController(title: "Rate \(appName)", message:
                 "If you like using \(appName), could you take a moment to rate it? Positive reviews help promote development. It only takes a minute!\nThanks for your support!", preferredStyle: UIAlertControllerStyle.alert)
             let okAction = UIAlertAction(title: "Yes", style: UIAlertActionStyle.default) {

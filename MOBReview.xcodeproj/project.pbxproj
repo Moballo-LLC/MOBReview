@@ -11,8 +11,8 @@
 		4435D8B695F6944FFDCFD9ED /* Pods_MOBReview_WatchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E76D8F1CF05F71210DE2972 /* Pods_MOBReview_WatchOS.framework */; };
 		960C9BE51E03C67600DB9484 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960C9BE41E03C67600DB9484 /* UIKit.framework */; };
 		960C9BEB1E03C69900DB9484 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960C9BEA1E03C69900DB9484 /* UIKit.framework */; };
-		96C285641E076EFF00481834 /* MOBCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C285551E076EFF00481834 /* MOBCore.h */; };
-		96C285651E076EFF00481834 /* MOBCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C285551E076EFF00481834 /* MOBCore.h */; };
+		96C285641E076EFF00481834 /* MOBReview.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C285551E076EFF00481834 /* MOBReview.h */; };
+		96C285651E076EFF00481834 /* MOBReview.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C285551E076EFF00481834 /* MOBReview.h */; };
 		96C285721E076EFF00481834 /* MOBReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2855D1E076EFF00481834 /* MOBReview.swift */; };
 		96FC33D31F0BED40002580C8 /* MOBReviewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC33D21F0BED40002580C8 /* MOBReviewBase.swift */; };
 		96FC33D41F0BED40002580C8 /* MOBReviewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC33D21F0BED40002580C8 /* MOBReviewBase.swift */; };
@@ -55,7 +55,7 @@
 		96C2853C1E076C2C00481834 /* Info-watch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-watch.plist"; path = "Sources/Info-watch.plist"; sourceTree = SOURCE_ROOT; };
 		96C285521E076EFF00481834 /* Info-watch.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watch.plist"; sourceTree = "<group>"; };
 		96C285531E076EFF00481834 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96C285551E076EFF00481834 /* MOBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBCore.h; sourceTree = "<group>"; };
+		96C285551E076EFF00481834 /* MOBReview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBReview.h; sourceTree = "<group>"; };
 		96C2855D1E076EFF00481834 /* MOBReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOBReview.swift; sourceTree = "<group>"; };
 		96FC33D21F0BED40002580C8 /* MOBReviewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOBReviewBase.swift; sourceTree = "<group>"; };
 		AAA2976758B6FD378F33998F /* Pods-MOBReview_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOBReview_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MOBReview_iOS/Pods-MOBReview_iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 				96FC33D21F0BED40002580C8 /* MOBReviewBase.swift */,
 				96C285521E076EFF00481834 /* Info-watch.plist */,
 				96C285531E076EFF00481834 /* Info.plist */,
-				96C285551E076EFF00481834 /* MOBCore.h */,
+				96C285551E076EFF00481834 /* MOBReview.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96C285641E076EFF00481834 /* MOBCore.h in Headers */,
+				96C285641E076EFF00481834 /* MOBReview.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +201,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96C285651E076EFF00481834 /* MOBCore.h in Headers */,
+				96C285651E076EFF00481834 /* MOBReview.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +217,6 @@
 				1EAFA0D41B6039D5001F3D84 /* Frameworks */,
 				1EAFA0D51B6039D5001F3D84 /* Headers */,
 				1EAFA0D61B6039D5001F3D84 /* Resources */,
-				1F04BC32C8D1A09A48C1A464 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,7 +236,6 @@
 				960C9BB81E03BFAB00DB9484 /* Frameworks */,
 				960C9BB91E03BFAB00DB9484 /* Headers */,
 				960C9BBA1E03BFAB00DB9484 /* Resources */,
-				E8C06FAB2EC06814171E27A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -331,34 +329,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F04BC32C8D1A09A48C1A464 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MOBReview_iOS/Pods-MOBReview_iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5CF6C0BE6F91C3334752CAB9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MOBReview_WatchOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BE8C91D9D54B325E2AABCA3E /* [CP] Check Pods Manifest.lock */ = {
@@ -367,28 +353,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MOBReview_iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E8C06FAB2EC06814171E27A4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MOBReview_WatchOS/Pods-MOBReview_WatchOS-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
