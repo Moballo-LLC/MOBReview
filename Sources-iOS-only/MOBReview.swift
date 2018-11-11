@@ -59,8 +59,8 @@ import StoreKit
         }
         @objc public static func reviewPopup(appID: String, appName: String, closure: (() -> Swift.Void)?) -> UIAlertController {
             let alertController = UIAlertController(title: "Rate \(appName)", message:
-                "If you like using \(appName), could you take a moment to rate it? Positive reviews help promote development. It only takes a minute!\nThanks for your support!", preferredStyle: UIAlertControllerStyle.alert)
-            let okAction = UIAlertAction(title: "Yes", style: UIAlertActionStyle.default) {
+                "If you like using \(appName), could you take a moment to rate it? Positive reviews help promote development. It only takes a minute!\nThanks for your support!", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Yes", style: UIAlertAction.Style.default) {
                 UIAlertAction in
                 //NSLog("OK Pressed")
                 UserDefaults.standard.set(true, forKey: reviewedCurrentVersKey)
@@ -76,7 +76,7 @@ import StoreKit
                     DispatchQueue.main.sync(execute: toEx)
                 }
             }
-            let cancelAction = UIAlertAction(title: "Remind Me Later", style: UIAlertActionStyle.cancel) {
+            let cancelAction = UIAlertAction(title: "Remind Me Later", style: UIAlertAction.Style.cancel) {
                 UIAlertAction in
                 //NSLog("Cancel Pressed")
                 UserDefaults.standard.set(0, forKey: counterKey)
@@ -85,7 +85,7 @@ import StoreKit
                     DispatchQueue.main.sync(execute: toEx)
                 }
             }
-            let neverAction = UIAlertAction(title: "Don't Ask Me Again", style: UIAlertActionStyle.destructive) {
+            let neverAction = UIAlertAction(title: "Don't Ask Me Again", style: UIAlertAction.Style.destructive) {
                 UIAlertAction in
                 //NSLog("Never Pressed")
                 UserDefaults.standard.set(true, forKey: neverReviewKey)

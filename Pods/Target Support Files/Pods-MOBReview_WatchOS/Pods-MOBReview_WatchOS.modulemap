@@ -1,6 +1,0 @@
-framework module Pods_MOBReview_WatchOS {
-  umbrella header "Pods-MOBReview_WatchOS-umbrella.h"
-
-  export *
-  module * { export * }
-}
