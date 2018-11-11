@@ -14,14 +14,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		96387D29219536BF0072379A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96894C9D21989B8A0072C89F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		96894C9F21989B8E0072C89F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96894CA821989D350072C89F /* MobReview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobReview.h; sourceTree = "<group>"; };
 		96894CA921989D350072C89F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96894CB121989E3B0072C89F /* MOBReview_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MOBReview_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96959D951FE6E258009ACC2B /* MOBReview.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = MOBReview.podspec; sourceTree = "<group>"; };
-		96C285551E076EFF00481834 /* MOBReview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBReview.h; sourceTree = "<group>"; };
 		96C2855D1E076EFF00481834 /* MOBReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOBReview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +61,6 @@
 		96387D27219536BF0072379A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				96387D29219536BF0072379A /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = SOURCE_ROOT;
@@ -80,7 +77,6 @@
 		96C285511E076EFF00481834 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				96C285551E076EFF00481834 /* MOBReview.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
